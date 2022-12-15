@@ -52,9 +52,10 @@ The actual training process for my model involves using stochastic gradient desc
 Overall, this training process allowed me to effectively optimize the model using SGD and save the resulting parameters for future use.
 
 1.6 File Generation
-All of the data used in this process is being loaded from the lazy-data source, with the exception of the id numbers, which are being loaded from a specific file located at './csci-ua-473-intro-to-machine-learning-fall22/test/test/testX.pt'. In order to calculate the id numbers individually and efficiently, the batch size was carefully set to 1. This allows for the calculation of each id number separately, without the need for additional processing or data manipulation. The final output of this process was divided by 1000 in order to fit the original data that was used for Data Preprocessing. This ensures that the calculated id numbers are accurate and consistent with the original data, allowing for effective and efficient analysis.                                Adagrad                               Adam
+All of the data used in this process is being loaded from the lazy-data source, with the exception of the id numbers, which are being loaded from a specific file located at './csci-ua-473-intro-to-machine-learning-fall22/test/test/testX.pt'. In order to calculate the id numbers individually and efficiently, the batch size was carefully set to 1. This allows for the calculation of each id number separately, without the need for additional processing or data manipulation. The final output of this process was divided by 1000 in order to fit the original data that was used for Data Preprocessing. This ensures that the calculated id numbers are accurate and consistent with the original data, allowing for effective and efficient analysis.                        
 
 Discussion
+
 3.1 Different Epoch Values
 Based on the data given, it appears that the loss and error values decrease as the epoch value increases. This indicates that the model is improving as it trains for more epochs.
 In general, the number of epochs (or the number of times the model sees the entire training dataset) is a hyperparameter that can be adjusted to influence the performance of a deep learning model. Increasing the number of epochs can allow the model to continue improving, but it can also lead to overfitting if the model begins to memorize the training data rather than learning generalizable patterns.
@@ -72,6 +73,7 @@ In this particular case, the Adam optimizer appears to be the best performing op
 
 
 Future Work
+
 4.1 Model
 Consider switching to a different model architecture such as VGG, Inception, or DenseNet instead of the prebuilt ResNet model. These models have been trained on large datasets of images and can be used for tasks such as image classification, detection, and segmentation.
 
