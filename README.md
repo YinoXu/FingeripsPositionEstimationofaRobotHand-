@@ -76,13 +76,13 @@ In this particular case, the Adam optimizer appears to be the best performing op
 # Experimental Results
 
 ## 2.1 Different Epoch Values
-![list](image/2_1.png)
+![list](2_1.png)
 
 ## 2.2 Different Model Selection (Calculated at Epoch = 5)
-![list](images/2_2.png)
+![list](2_2.png)
 
 ## 2.3 Different Optimizers for Training (Calculated at Epoch = 10)
-![list](images/2_3.png)
+![list](2_3.png)
 
 # Future Work
 
